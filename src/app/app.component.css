@@ -1,0 +1,20 @@
+@reference "../styles.css"; /* -> Importa o file que tem os temas ("Raiz" que tem os styles disponiveis) <- */
+/*@import 'tailwindcss'; -> Caso não tenha os temas no styles.css <- */
+
+.card-container {
+  @apply flex justify-center items-center w-full h-full;
+}
+
+.card {
+  @apply border rounded-xl shadow-2xl w-[300px] p-4; /* -> Structure of card <- */
+  @apply border-primary-500 bg-white; /* -> Colors of structure of card <- */
+
+  .card-title {
+    @apply font-bold text-2xl mb-4;
+  }
+
+  .card-action {
+    @apply w-full font-bold py-2 px-4 rounded;
+    @apply bg-primary-500 hover:bg-primary-400 text-white;
+  }
+}

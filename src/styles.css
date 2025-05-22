@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+html, body {
+  @apply h-full;
+}
+
+@theme {
+  --color-primary-100: #EAE8FC;
+  --color-primary-200: #C0BAF7;
+  --color-primary-300: #978CF2;
+  --color-primary-400: #6D5FED;
+  --color-primary-500: #4331E8;
+  --color-primary-600: #2A17CE;
+  --color-primary-700: #2012A0;
+  --color-primary-800: #170D73;
+  --color-primary-900: #0E0845;
+}
